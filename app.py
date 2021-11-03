@@ -23,11 +23,8 @@ def change():
             converted = text.translate(to='pa')
         elif lang == 'gu':
             converted = text.translate(to='gu')
-        elif lang == 'ta':
-            converted = text.translate(to='ta')
-            
         else:
-            converted = text.translate(to='te')
+            converted = text.translate(to='ta')
 
     return render_template('home.html',received_text = received_text, converted = converted)
     
